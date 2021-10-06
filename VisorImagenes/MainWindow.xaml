@@ -1,0 +1,41 @@
+﻿<Window x:Class="VisorImagenes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisorImagenes"
+        mc:Ignorable="d"
+        Icon="img/icon.ico"
+        Title="Visor Imagenes" Height="600" Width="700" MinHeight="600" MinWidth="700">
+    <Grid>
+        <DockPanel>
+            <DockPanel DockPanel.Dock="Bottom" Background="LightBlue" Height="60" LastChildFill="False" Margin="10">
+                <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="5,0" FontSize="20" FontFamily="Rubik">Nº de imágenes: 10</TextBlock>
+                <TextBlock DockPanel.Dock="Right" VerticalAlignment="Center" Margin="5,0" FontSize="20" FontFamily="Rubik">Diseñado por Javier Catalá</TextBlock>
+            </DockPanel>
+            <Border DockPanel.Dock="Right" BorderBrush="Black" BorderThickness="2" CornerRadius="3" Margin="10">
+                <DockPanel Width="115" Background="LightGreen" LastChildFill="False">
+                    <Button DockPanel.Dock="Top" Margin="5">Añadir imagen</Button>
+                    <Button DockPanel.Dock="Top" Margin="5">Eliminar imagen</Button>
+                    <Button DockPanel.Dock="Top" Margin="5">Eliminar todas</Button>
+                    <Button DockPanel.Dock="Bottom" Margin="5">Rotar</Button>
+                    <Button DockPanel.Dock="Bottom" Margin="5">Recortar</Button>
+                </DockPanel>
+            </Border>
+            <StackPanel DockPanel.Dock="Top">
+                <TextBlock HorizontalAlignment="Center" FontSize="40" FontFamily="Rubik">Visor de imágen</TextBlock>
+            </StackPanel>
+            <WrapPanel>
+                <Image Source="img/episodioIV.jpg" Width="135"></Image>
+                <Image Source="img/episodioIV.jpg" Width="135"></Image>
+                <Image Source="img/episodioIV.jpg" Width="135"></Image>
+                <Image Source="img/episodioIV.jpg" Width="135"></Image>
+                <Image Source="img/episodioIV.jpg" Width="135"></Image>
+                <Image Source="img/episodioIV.jpg" Width="135"></Image>
+                <Image Source="img/episodioIV.jpg" Width="135"></Image>
+                <Image Source="img/episodioIV.jpg" Width="135"></Image>
+            </WrapPanel>
+            
+        </DockPanel>
+    </Grid>
+</Window>
