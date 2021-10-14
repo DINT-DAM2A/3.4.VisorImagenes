@@ -7,33 +7,59 @@
         mc:Ignorable="d"
         Icon="img/icon.ico"
         Title="Visor Imagenes" Height="600" Width="700" MinHeight="600" MinWidth="700">
+
+    <Window.Resources>
+        <Style TargetType="DockPanel" x:Key="DockPanelInferior">
+            <Setter Property="DockPanel.Dock" Value="Bottom"/>
+            <Setter Property="Background" Value="LightBlue"/>
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="LastChildFill" Value="False"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="Rubik"/>
+        </Style>
+
+        <Style TargetType="Image">
+            <Setter Property="Width" Value="135"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources> 
+    
     <Grid>
         <DockPanel>
-            <DockPanel DockPanel.Dock="Bottom" Background="LightBlue" Height="60" LastChildFill="False" Margin="10">
-                <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="5,0" FontSize="20" FontFamily="Rubik">Nº de imágenes: 10</TextBlock>
-                <TextBlock DockPanel.Dock="Right" VerticalAlignment="Center" Margin="5,0" FontSize="20" FontFamily="Rubik">Diseñado por Javier Catalá</TextBlock>
+            <DockPanel Style="{StaticResource DockPanelInferior}">
+                <TextBlock DockPanel.Dock="Left">Nº de imágenes: 10</TextBlock>
+                <TextBlock DockPanel.Dock="Right">Diseñado por Javier Catalá</TextBlock>
             </DockPanel>
             <Border DockPanel.Dock="Right" BorderBrush="Black" BorderThickness="2" CornerRadius="3" Margin="10">
                 <DockPanel Width="115" Background="LightGreen" LastChildFill="False">
-                    <Button DockPanel.Dock="Top" Margin="5">Añadir imagen</Button>
-                    <Button DockPanel.Dock="Top" Margin="5">Eliminar imagen</Button>
-                    <Button DockPanel.Dock="Top" Margin="5">Eliminar todas</Button>
-                    <Button DockPanel.Dock="Bottom" Margin="5">Rotar</Button>
-                    <Button DockPanel.Dock="Bottom" Margin="5">Recortar</Button>
+                    <Button DockPanel.Dock="Top">Añadir imagen</Button>
+                    <Button DockPanel.Dock="Top">Eliminar imagen</Button>
+                    <Button DockPanel.Dock="Top">Eliminar todas</Button>
+                    <Button DockPanel.Dock="Bottom">Rotar</Button>
+                    <Button DockPanel.Dock="Bottom">Recortar</Button>
                 </DockPanel>
             </Border>
             <StackPanel DockPanel.Dock="Top">
-                <TextBlock HorizontalAlignment="Center" FontSize="40" FontFamily="Rubik">Visor de imágen</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="40">Visor de imágen</TextBlock>
             </StackPanel>
             <WrapPanel>
-                <Image Source="img/episodioIV.jpg" Width="135"></Image>
-                <Image Source="img/episodioIV.jpg" Width="135"></Image>
-                <Image Source="img/episodioIV.jpg" Width="135"></Image>
-                <Image Source="img/episodioIV.jpg" Width="135"></Image>
-                <Image Source="img/episodioIV.jpg" Width="135"></Image>
-                <Image Source="img/episodioIV.jpg" Width="135"></Image>
-                <Image Source="img/episodioIV.jpg" Width="135"></Image>
-                <Image Source="img/episodioIV.jpg" Width="135"></Image>
+                <Image Source="img/episodioIV.jpg"></Image>
+                <Image Source="img/episodioIV.jpg"></Image>
+                <Image Source="img/episodioIV.jpg"></Image>
+                <Image Source="img/episodioIV.jpg"></Image>
+                <Image Source="img/episodioIV.jpg"></Image>
+                <Image Source="img/episodioIV.jpg"></Image>
+                <Image Source="img/episodioIV.jpg"></Image>
+                <Image Source="img/episodioIV.jpg"></Image>
             </WrapPanel>
             
         </DockPanel>
