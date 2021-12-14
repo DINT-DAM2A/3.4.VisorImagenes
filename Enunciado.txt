@@ -1,0 +1,11 @@
+4. Diseñar la interfaz de usuario de un visor de imágenes siguiendo las siguientes
+indicaciones:
+• Únicamente se pueden utilizar paneles de tipo StackPanel, WrapPanel y
+DockPanel.
+• La interfaz debe comportarse al redimensionar la ventana como en el
+ejecutable suministrado.
+• El color de la zona inferior es LightBlue, y del panel lateral LightGreen.
+• Los textos de la zona superior e inferior tienen el tipo de letra Rubik. El texto
+superior tiene un tamaño de fuente de 40 y los textos de la zona inferior de
+20.
+Nombre del proyecto: VisorImagenes
